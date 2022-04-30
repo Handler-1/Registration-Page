@@ -22,8 +22,9 @@
             <form>
                 <div class="input">
                     <label for="email">Email Address</label>
-                    <input type="text" id="email">
+                    <input type="email" id="email">
                 </div>
+                
                 
                 <div class="name">
                     <div class="input">
@@ -36,15 +37,16 @@
                         <input type="text" id="lastName">
                     </div>
                 </div>
+                
 
                 <div class="input">
                     <label for="password">Password</label>
-                    <input type="text" id="password">
+                    <input type="password" id="password">
                 </div>
 
                 <div class="dateOfBirth">
                     <div class="birthHeader">
-                        <p>Date-Of-Birth</p>
+                        <p>Date of Birth</p>
                     </div>
                     
                     <div class="birthNested">
@@ -59,25 +61,30 @@
                                 <option value="june">June</option>
                                 <option value="july">July</option>
                                 <option value="august">August</option>
+                                <option value="septemeber">September</option>
+                                <option value="october">October</option>
+                                <option value="november">November</option>
+                                <option value="december">December</option>
                             </select>
                         </div>
 
                         <div class="birthDay">
                             <div class="input">
                                 <label for="day">Day</label>
-                                <input type="text" id="day" min="1" max="31">
+                                <input type="number" id="day" min="1" max="31">
                             </div>
                         </div>
+
                     <div class="birthYear">    
                         <div class="input">
                             <label for="year">Year</label>
-                            <input type="text" id="year" min="1900" max="2022">
+                            <input type="number" id="year" min="1900" max="2022">
                         </div>
                     </div>
                     </div>
                 </div>
 
-                <p>By clicking Create account, I agree that I have read and accept4ed the <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.</p>
+                <p class="agreement">By clicking Create account, I agree that I have read and accepted the <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.</p>
                 <button type="button">Create account</button>
             </form>
         </div>
