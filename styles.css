@@ -52,6 +52,7 @@ h1 {
     margin-bottom: 20px;
 }
 
+/* Puts input box below label */
 .input > label {
     margin-top: 8px;
     margin-bottom: 8px;
@@ -70,7 +71,7 @@ h1 {
 
 .name {
     display: grid;
-    grid-template-columns: repeat(2, calc(50% - 6px)); 
+    grid-template-columns: repeat(2, calc(50% - 6px)); /* Considers gap space */
     gap: 12px;
 }
 
@@ -138,4 +139,37 @@ button {
     background-color: #24A0ED;
     border-radius: 8px;
     cursor:pointer;
+}
+
+/* media queries */
+
+@media screen and (max-width: 761px) {
+    .logo {
+        display: none;
+    }
+
+    .panel {
+        display: grid;
+        grid-column: 1 / span 12;
+    }
+}
+
+@media screen and (max-width: 454px) {
+    .container {
+        padding: 0;
+    }
+
+    .panel {
+        border-radius: 0;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .container {
+        padding: 0;
+    }
+
+    .panel {
+        border-radius: 0;
+    }
 }
